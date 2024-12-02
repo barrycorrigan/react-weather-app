@@ -1,6 +1,6 @@
 # React Weather App
 
-Small React application using the Open Weather Map API with Axios and the UseState hookgit  
+Small React application using the Open Weather Map API with Axios and the UseState hook. 
 
 # React + Vite
 

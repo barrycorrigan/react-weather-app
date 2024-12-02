@@ -5,7 +5,8 @@ function App() {
 
   const [data, setData] = useState({})
   const [location, setLocation] = useState('');
-  const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=2b3598232807dab59bc74779e3e23b1b&units=metric`;
+  const apiKey = import.meta.env.VITE_OPENWEATHERMAP_API_KEY;
+  const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${apiKey}&units=metric`;
 
   const searchLocation = (KeyboardEvent) => {
     if (KeyboardEvent.key === 'Enter') {
